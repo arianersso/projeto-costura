@@ -1,0 +1,278 @@
+header {
+
+	padding: 20px 0;
+	border-top: 2px solid #4C0B5F;
+	border-bottom: 5px solid #4C0B5F;
+}
+
+.caixa {
+
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+
+	width: 140px;
+}
+
+nav {
+
+	position: absolute;
+	top: 105px;
+	right: 0;
+}
+
+nav li {
+
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+
+	color: #4C0B5F;
+	font-size: 25px;
+}
+
+main {
+
+	background: #F5EFFB;
+}
+
+.produtos {
+
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+
+	display: inline-block;
+	text-align: center;
+	width: 45%;
+	vertical-align: top;
+	margin: 0 2%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #4C0B5F;
+	border-bottom-width: 5px;
+	background: #FFFFFF;
+}
+
+.produtos li:hover {
+
+	border: 5px solid #4C0B5F;
+	border-bottom-width: 8px;
+}
+
+.produtos li:hover h2 {
+
+	font-size: 35px;
+}
+
+.produtos h2 {
+
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.imagem-produto {
+
+	height: 140px;
+}
+
+.material {
+
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+
+	border: 2px solid #4C0B5F;
+	border-bottom-width: 5px;
+	padding: 10px 0;
+	text-align: center;
+}
+
+footer p {
+
+	font-size: 13px;
+}
+
+form {
+
+	width: 940px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+form label, form legend {
+
+	display: block;
+	font-size: 18px;
+}
+
+.input-padrao {
+
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	width: 50%;
+	border: 1px solid #4C0B5F;
+	border-radius: 3px;
+}
+
+.contato {
+
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.enviar {
+
+	width: 15%;
+	padding: 10px 0;
+	margin: 10px 0;
+	color: white;
+	text-transform: uppercase;
+	background: #4C0B5F;
+	border: 1px solid black;
+	border-radius: 3px;
+	transition: 1s background;
+	transition: 1s border;
+	cursor: pointer;
+}
+
+.enviar:hover {
+
+	background: #F5EFFB;
+	border: 1px solid #4C0B5F;
+	color: #000000;
+}
+
+table {
+
+	margin-bottom: 20px;
+}
+
+th {
+
+	font-size: 18px;
+}
+
+td, th {
+
+	border: 1px solid #4C0B5F;
+	padding: 10px 10px;
+}
+
+/* CSS da página Home */
+
+.imagem-entrada {
+
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+section {
+
+	clear: left;
+}
+
+.apresentacao-marca {
+
+	width: 940px;
+	margin: 20px auto;
+}
+
+.titulo {
+
+	font-size: 2em;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 3px solid #4C0B5F;
+	padding-bottom: 5px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.imagem-apresentacao {
+
+	width: 100px;
+	float: left;
+	margin: 20px 20px 10px 20px;
+	border: 1px solid #4C0B5F;
+}
+
+.imagem-apresentacao + p {
+
+	padding-top: 30px;
+}
+
+.blog {
+
+	width: 940px;
+	margin: 0 auto;
+}
+
+.blog p:not(.titulo) {
+
+	display: inline-block;
+	font-size: 18px;
+	width: 40%;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.blog p:not(.titulo):before {
+
+	content: "✂ ";
+}
+
+.imagem-blog {
+
+	display: inline-block;
+	width: 60%;
+	padding: 20px 0 20px 0;
+	vertical-align: top;
+}
+
+.imagem-blog:hover {
+
+	opacity: 0.3;
+}
+
+/* Visualização mobile */
+
+@media screen and (max-width: 480px) {
+
+	.caixa, .apresentacao-marca, .titulo, .blog {
+
+		width: auto;
+	}
+
+	.imagem-entrada, h1 img {
+
+		width: 100%;
+	}
+
+	nav {
+
+		position: static;
+	}
+}
